@@ -196,3 +196,15 @@ footer {
   justify-content: flex-end;
   align-items: center;
 }
+
+// ========================= Firebase Styling =======================
+
+li {
+  cursor: pointer;
+  list-style: none;
+  color: white;
+}
+ .greeting-list-item {
+  display: flex;
+  align-items: center;
+ }

@@ -5,15 +5,28 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Board from './pages/Board';
 import SignUpLogin from './components/SignUpLogin';
+// Firebase imports
+import { auth } from './services/firebase';
+import { useState, useEffect } from 'react';
 
 
 const App = () => {
   const URL = 'https://skate-react.herokuapp.com/'
+
+  const [ user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(user => setUser(user));
+    // clear from memory
+    return () => {
+      unsubscribe();
+    }
+  }, [])
   
   return (
     <div className="App">
       <div className="header-wrapper">
-        <Header >
+        <Header user={user} >
           <SignUpLogin />
         </Header >
       </div>
