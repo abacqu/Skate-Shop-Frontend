@@ -28,9 +28,9 @@ const Header = (props) => {
         <Link to="/"><img src="https://i.imgur.com/8IxHRpV.png" alt="logo" /></Link>
       </div>
       <div className="header--cart-user">
-        <Link to="/cart"><img src="https://i.imgur.com/TVVrCxx.png" alt="cart" /></Link>
+        <Link to="/cart"><img src="https://i.imgur.com/LcCK06L.png" alt="cart" /></Link>
         <div className="header--user-dropdown" data-dropdown>
-          <button className="header--dropdown-link" onClick={() => setOpen(!open)} data-dropdown-button><img src="https://i.imgur.com/IZl03Cj.png" alt="user" /></button>
+          <button className="header--dropdown-link" onClick={() => setOpen(!open)} data-dropdown-button><img src="https://i.imgur.com/h75LHQo.png" alt="user" /></button>
           {open && props.children}
         </div>
       </div>

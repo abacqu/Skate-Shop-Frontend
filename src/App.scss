@@ -34,7 +34,7 @@ header {
     "left right";
   max-width: 1316px;
   padding: 25px 0 25px 0;
-  margin: 0 0 -20px 0;
+  margin: 0 0 -10px 0;
 }
 
 .header--logo {
@@ -51,6 +51,12 @@ header {
   align-items: center;
   gap: 20px;
   align-items: flex-end;
+
+  img:hover {
+    -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    border-radius: 10px;
+  }
 }
 
 .header--dropdown-link {
@@ -99,7 +105,20 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 34px 0 34px 0;
+  padding: 20px 0 20px 0;
+  max-height: 70px;
+
+  img {
+    padding: 15px;
+  }
+
+  img:hover {
+    // background: #1d1d1d;
+    border-radius: 15px;
+    // border-bottom: 1px solid #999894;
+    -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  }
 }
 
 .banner {
@@ -111,7 +130,7 @@ main {
   width: 100%;
   border-radius: 10px;
   a {
-    color: white;
+    color: #c5c4c1;
     text-decoration: none;
   }
 }
@@ -122,13 +141,16 @@ main {
   align-items: center;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
+
+  a:hover {
+    color: #ffffff;
+  }
 }
 
 .banner-text--effect {
-  -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-webkit-animation: text-shadow-drop-br 0.6s both;
+	        animation: text-shadow-drop-br 0.6s both;
           padding-bottom: 5px;
-          border-bottom: 1px solid rgb(203, 203, 203);
 }
 
 .card-small {
@@ -157,6 +179,17 @@ main {
   img {
     max-width: 100px;
     max-height: 200px;
+  }
+
+  a{
+    color: #999894;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999894;
   }
 }
 

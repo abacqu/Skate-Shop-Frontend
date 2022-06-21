@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <section className="banner-text">
-        <Link to="/skateboards">
+        <Link to="/createboard">
           <section className="banner-text--effect">
             Create your own board
           </section>
