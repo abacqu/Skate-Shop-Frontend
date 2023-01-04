@@ -34,4 +34,4 @@ Click <a href ="https://skate-react.netlify.app/" target="_blank"/> here </a> to
 - Single user authentication 
 - Add Dark / Light mode
 
-## Backend Repository <a href ="https://skate-react.netlify.app/" target="_blank"/> here </a> 
+## Backend Repository <a href ="https://github.com/danzoboyo10/skate-react-backend" target="_blank"/> here </a> 
